@@ -3,6 +3,10 @@
     src: url("../fontes/idroid.otf");
 }
 
+
+
+/* font-family: 'Bebas Neue', cursive; */
+
 :root{
     --cor-principal: #008035;
     --cor-secundaria: #198044;
@@ -29,9 +33,12 @@ header{
 }
 
 header > h1{
+    font-family: 'Bebas Neue', cursive; 
     color: #ffffff;
     text-align: center;
     padding: 20px;
+    font-size: 45px;
+    letter-spacing: 2px;
 }
 
 header > p{
@@ -64,6 +71,7 @@ article{
     width: 70vw;
     margin: 0 auto;
     padding: 20px 25px;
+    max-width: 800px;
     box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.377);
 }
 
@@ -90,6 +98,28 @@ article p{
     text-align: justify;
     padding: 10px 0;
 
+}
+
+a.extern{
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    background-color: #19804436;
+    padding: 2px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+a.extern::after{
+    content: url("../imagens/clip.ico");
+    vertical-align: middle;
+}
+
+a.intern{
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    padding: 2px;
+    border-radius: 5px;
+    white-space: nowrap;
 }
 
 #robots-img{
@@ -122,15 +152,25 @@ article p{
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    max-width: 800px;
     padding: 10px 20px;
     background-color: var(--cor-secundaria);
     box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.377);
     width: 70vw;
 }
 
+#video iframe{
+    width: 68vw;
+    height: 38vw;
+
+    max-width: 800px;
+    max-height: 450px;
+}
+
 #extra{
     background-color: #00cc5565;
     border-radius: 10px;
+    margin-bottom: 10px;
     box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.322);
 }
 
@@ -196,20 +236,25 @@ footer{
         width: 70vw;
     }
 
-}
-
-@media(max-width: 530px){
     article, #video{
         width: 100vw;
     }
 
+    #video iframe{
+        width: 90vw;
+        height: 50vw;    
+    }
+
+}
+
+@media(max-width: 530px){
 
     #irina img{
         width: 90vw;
     }
 
     header > h1{
-        font-size: 25px;
+        font-size: 35px;
     }
 
     header > p{
