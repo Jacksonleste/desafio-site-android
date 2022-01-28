@@ -26,8 +26,7 @@ body{
 
 header{
     background: linear-gradient(180deg, var(--cor-terciaria), 50%, var(--cor-principal));
-    /* width: 100VW; */
-    /* overflow: hidden; */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.486);
 }
 
 header > h1{
@@ -66,6 +65,7 @@ article{
     width: 70vw;
     margin: 0 auto;
     padding: 20px 25px;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.377);
 }
 
 article > h1{
@@ -96,6 +96,7 @@ article p{
 #robots-img{
     display: flex;
     justify-content: center;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.377)); 
 }
 
 #irina{
@@ -112,7 +113,11 @@ article p{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.377)); 
+ 
 }
+
+
 
 #video{
     display: flex;
@@ -120,12 +125,14 @@ article p{
     margin: 0 auto;
     padding: 10px 20px;
     background-color: var(--cor-secundaria);
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.377);
     width: 70vw;
 }
 
 #extra{
     background-color: #00cc5565;
     border-radius: 10px;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.322);
 }
 
 #extra > h1{
@@ -155,6 +162,8 @@ article#last{
 footer{
     margin-top: 30px;
     padding: 20px 5px;
+
+    box-shadow: inset 4px 5px 10px rgba(0, 0, 0, 0.377);
 
     color: #ffffff;
     text-align: center;
