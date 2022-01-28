@@ -191,7 +191,11 @@ a.intern{
 #extra ul{
     margin: 10px 90px;
     display: inline-block;
-    list-style-image: url("/imagens/ok.ico");
+    list-style-image: url("../imagens/ok.ico");
+}
+
+#extra ul li{
+    vertical-align: top;
 }
 
 article#last{
