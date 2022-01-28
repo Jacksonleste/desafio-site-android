@@ -1,13 +1,12 @@
 @font-face {
     font-family: iDroid;
-    src: url("/fontes/idroid.otf");
+    src: url("../fontes/idroid.otf");
 }
 
 :root{
     --cor-principal: #008035;
     --cor-secundaria: #198044;
     --cor-terciaria: #00CC54;
-    --cor-complementar: #00FF6A;
 }
 
 *{
