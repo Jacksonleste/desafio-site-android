@@ -20,10 +20,14 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: var(--cor-terciaria);
+
 }
 
 header{
     background: linear-gradient(180deg, var(--cor-terciaria), 50%, var(--cor-principal));
+    /* width: 100VW; */
+    /* overflow: hidden; */
 }
 
 header > h1{
@@ -55,4 +59,160 @@ nav > a{
 
 nav > a:hover{
     background-color: var(--cor-secundaria)
+}
+
+article{
+    background: white;
+    width: 70vw;
+    margin: 0 auto;
+    padding: 20px 25px;
+}
+
+article > h1{
+    font-family: IDroid, sans-serif;
+    color: var(--cor-secundaria);
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+article > h2{
+    font-family: IDroid, sans-serif;
+    color: var(--cor-secundaria);
+    background: linear-gradient(90deg, #00cc5536, 80%, #ffffff);
+
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 24px;
+
+}
+
+article p{
+    text-indent: 30px;
+    text-align: justify;
+    padding: 10px 0;
+
+}
+
+#robots-img{
+    display: flex;
+    justify-content: center;
+}
+
+#irina{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#irina img{
+    width: 65vw;
+}
+
+#bugdroid{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: var(--cor-secundaria);
+    width: 70vw;
+}
+
+#extra{
+    background-color: #00cc5565;
+    border-radius: 10px;
+}
+
+#extra > h1{
+    background-color: var(--cor-principal);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px 10px 0 0;
+
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#extra > p{
+    padding: 10px 25px;
+}
+
+#extra ul{
+    margin: 10px 90px;
+    display: inline-block;
+    list-style-image: url("/imagens/ok.ico");
+}
+
+article#last{
+    border-radius: 0 0 10px 10px;
+}
+
+footer{
+    margin-top: 30px;
+    padding: 20px 5px;
+
+    color: #ffffff;
+    text-align: center;
+    background-color: var(--cor-principal);
+}
+
+/* Media query */
+
+@media(max-width: 1150px){
+    
+    #robots-img img{
+        width: 600px;
+    }
+}
+
+@media(max-width: 1054px){
+    #extra ul{
+        margin: 10px 50px;
+    }
+}
+
+@media(max-width: 815px){
+    #extra ul{
+        display: block;
+        margin: 20px 20vw;
+    }
+}
+
+@media(max-width: 750px){
+    #robots-img img{
+        width: 70vw;
+    }
+
+}
+
+@media(max-width: 530px){
+    article, #video{
+        width: 100vw;
+    }
+
+
+    #irina img{
+        width: 90vw;
+    }
+
+    header > h1{
+        font-size: 25px;
+    }
+
+    header > p{
+        font-size: 16px;
+    }
+
+    nav {
+        display: flex;
+    }
+    nav > a{
+        text-align: center;
+        font-size: 13px;
+    }
 }
