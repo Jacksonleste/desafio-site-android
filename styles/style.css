@@ -114,7 +114,7 @@ a.extern::after{
     vertical-align: middle;
 }
 
-a.intern{
+strong{
     font-weight: bold;
     color: var(--cor-secundaria);
     padding: 2px;
