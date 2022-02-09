@@ -39,6 +39,7 @@ header > h1{
     padding: 20px;
     font-size: 45px;
     letter-spacing: 2px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.267);
 }
 
 header > p{
@@ -48,6 +49,7 @@ header > p{
     font-size: 18px;
     padding: 10px 20px;
     max-width: 500px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.267);
 }
 
 
